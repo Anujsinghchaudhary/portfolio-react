@@ -1,6 +1,6 @@
 import React from 'react';
 import "./footer.css";
-import Logo_anuj from '../../assets/Logo_anuj';
+import Logo_anuj from '../../assets/Logo_anuj.svg';
 import user_icon from '../../assets/user_icon.svg';
 
 export const Footer = () => {
