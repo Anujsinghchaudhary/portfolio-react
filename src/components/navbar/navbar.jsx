@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import './navbar.css';
-import  Logo_anuj from '../../assets/Logo_anuj.svg';
+import Logo_anuj from '../../assets/Logo_anuj.svg';
 import nav_underline from '../../assets/nav_underline.svg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import menu_open from '../../assets/menu_open.svg';
@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-      <img src={Logo_anuj} alt="logo" />
+      <img src={Logo_anuj} alt="logo" className='logo-image' />
       <img src={menu_open} onClick={openMenu} alt="Open Menu" className='nav-mob-open' />
       <ul ref={menuRef} className="nav-menu">
         <img src={menu_close} onClick={closeMenu} alt="Close Menu" className='nav-mob-close' />
@@ -56,9 +56,7 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="nav-connect">
-        <AnchorLink className='anchor-link' href='#connect'>
-          connect with me
-        </AnchorLink>
+        <AnchorLink className='anchor-link' href='#connect'>connect with me</AnchorLink>
       </div>
     </div>
   )

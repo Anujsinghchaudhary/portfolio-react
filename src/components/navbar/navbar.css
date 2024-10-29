@@ -5,6 +5,10 @@
     padding: 20px 170px;
 }
 
+.navbar .logo-image {
+    width: 100px;
+}
+
 .nav-menu {
     display: flex;
     align-items: center;
