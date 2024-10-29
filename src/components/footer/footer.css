@@ -9,6 +9,13 @@
     display: flex;
     justify-content: space-between;
 }
+.footer-top-left .footer-logo{
+    width: 100px;
+    margin-bottom: 30px;
+    align-items: center;
+    gap: 20px;
+    
+}
 
 .footer-top-left p {
     font-size: 20px;

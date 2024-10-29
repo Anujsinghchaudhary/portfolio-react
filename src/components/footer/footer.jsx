@@ -8,7 +8,7 @@ export const Footer = () => {
     <div className='footer'>
       <div className="footer-top">
         <div className="footer-top-left">
-          <img src={Logo_anuj} alt="Footer Logo" />
+          <img src={Logo_anuj} alt="Footer Logo" className="footer-logo"/>
           <p>I am a front end developer, currently pursuing CSE from Graphic Era University Dehradun, UK, INDIA.</p>
         </div>
         <div className="footer-top-right">
