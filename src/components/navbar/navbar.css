@@ -4,10 +4,6 @@
     justify-content: space-between;
     padding: 20px 170px;
 }
-.navbar:hover {
-    transform: scale(1.05);
-    transition: 0.2s;
-}
 
 .navbar .logo-image {
     width: 100px;
@@ -20,11 +16,20 @@
     gap: 60px;
     font-size: 20px;
 }
+.nav-menu li {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+.nav-menu li:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
 
 .nav-connect {
     padding: 20px 40px;
     border-radius: 50px;
-    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+    background: linear-gradient(267deg, #2196f3 0.36%, #f44336 102.06%);
     font-size: 22px;
     cursor: pointer;
     transition: 0.5s;
