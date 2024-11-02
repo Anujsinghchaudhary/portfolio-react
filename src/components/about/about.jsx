@@ -4,38 +4,37 @@ import Profile_anuj from "../../assets/Profile_anuj.svg";
 
 const About = () => {
   return (
-    <div id="about" className="about">
-      <div className="about-title">
+    <section id="about" className="about">
+      <header className="about-title">
         <h1>About Me</h1>
-        <img src={theme} alt="Theme" />
-      </div>
+        <img src={theme} alt="Theme decoration" />
+      </header>
       <div className="about-sections">
         <div className="about-left">
-          <img src={Profile_anuj} alt="Profile_anuj" width="300px" height="300px" />
+          <img src={Profile_anuj} alt="Profile of Anuj Singh" width="300px" height="300px" />
         </div>
         <div className="about-right">
           <div className="about-para">
             <p>Student at GEU</p>
-            <br />
-            <p>Persuing B.Tech in CSE with AI & DS</p>
+            <p>Pursuing B.Tech in CSE with AI & DS</p>
           </div>
           <div className="about-skills">
             <div className="about-skill">
               <p>HTML & CSS</p>
-              <hr style={{ width: "60%" }} />
+              <hr className="skill-bar" style={{ width: "60%" }} />
             </div>
             <div className="about-skill">
               <p>JavaScript</p>
-              <hr style={{ width: "60%" }} />
+              <hr className="skill-bar" style={{ width: "60%" }} />
             </div>
             <div className="about-skill">
               <p>React</p>
-              <hr style={{ width: "80%" }} />
+              <hr className="skill-bar" style={{ width: "80%" }} />
             </div>
             <div className="about-skill">
               <p>Node.js</p>
-              <hr style={{ width: "50%" }} />
-              </div>
+              <hr className="skill-bar" style={{ width: "50%" }} />
+            </div>
           </div>
         </div>
       </div>
@@ -57,8 +56,8 @@ const About = () => {
         </div>
         <hr />
       </div>
-    </div>
-  )
+    </section>
+  );
 }
 
-export default About
+export default About;
