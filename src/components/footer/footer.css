@@ -46,15 +46,6 @@
     font-size: 18px;
 }
 
-.footer-subscribe {
-    font-size: 20px;
-    padding: 22px 50px;
-    border-radius: 50px;
-    background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106%);
-    cursor: pointer;
-    transition: 0.5s;
-}
-
 .footer-bottom-right .social-buttons {
     display: flex;
     justify-content: center;
