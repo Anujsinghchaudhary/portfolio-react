@@ -20,42 +20,40 @@ const Card = () => {
 const StyledWrapper = styled.div`
   .card {
     width: 500px;
-    height: 300px; 
+    height: 300px;
     background: #f0f0f0;
     border-radius: 10px;
     text-align: center;
     transition: all 0.5s;
     position: relative;
+    overflow: hidden;
   }
-
 
   .card:hover {
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
     background-color: #4bb8ff;
   }
 
-  .card .blob {
+  .blob {
     height: 10px;
     width: 75%;
     border-radius: 0 0 30px 30px;
     margin: 0 auto;
     background-color: #4bb8ff;
-    visibility: visible;
-    transition: all 0.3s;
+    transition: height 0.3s;
   }
 
   .card:hover .blob {
     height: 0;
   }
 
-  .card .img {
+  .img {
     display: flex;
-    margin: 30px auto 10px auto;
+    margin: 30px auto 10px;
     width: 70px;
     height: 70px;
     background-color: #4bb8ff;
     border-radius: 50%;
-    font-size: 11px;
     justify-content: center;
     align-items: center;
     transition: all 0.5s;
@@ -67,50 +65,53 @@ const StyledWrapper = styled.div`
     border-radius: 10px 0 0;
     margin: 0 auto;
     background-color: #f0f0f0;
-    z-index: 99999;
+    z-index: 1;
   }
 
-  .card h2 {
+  h2 {
     padding: 15px 10px;
     font-size: 25px;
-    transition: all 0.1s;
-    z-index: -99;
+    transition: opacity 0.5s;
     line-height: 17px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
   }
 
-  .card span {
+  span {
     font-size: 18px;
   }
 
   .card:hover h2 {
     opacity: 0;
-    width: 100%;
-    position: absolute;
-    transition: all 0.5s;
   }
 
-  .card > p {
+  p {
     opacity: 0;
-    transition: all 0.75s;
+    transition: opacity 0.75s;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-  }
-
-  .card > p > svg {
-    padding: 5px;
-  }
-
-  .card:hover > p {
     position: absolute;
     bottom: 15px;
     left: 0;
     right: 0;
+  }
+
+  .card:hover > p {
     opacity: 1;
-    transition: all 0.1s;
+    transition: opacity 0.1s;
+  }
+
+  svg {
+    padding: 5px;
   }
 `;
+
+
 
 
 const Hero = () => {
