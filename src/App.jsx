@@ -1,26 +1,26 @@
 import React from 'react'
 import Navbar from './components/navbar/navbar'
 import Hero from './components/Hero/Hero'
-import About from './components/about/about'
 import Services from './components/services/services'
 import Mywork from './components/mywork/mywork'
 import Contact from './components/contact/contact'
 import Footer from './components/footer/footer'
-
+import SkillsSection  from './components/skills/SkillsSection'
 const App = () => {
   return (
-    <div>
+    <div className="bg-gray-900 min-h-screen">
+      <div className="container mx-auto px-4">
       <Navbar />
       <Hero/>
-      <About/>
+
+      <SkillsSection />
       <Services/>
       <Mywork/>
       <Contact/>
       <Footer/>
+      </div>
     </div>
-
   )
-
 }
 
 export default App
