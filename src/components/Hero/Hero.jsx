@@ -1,137 +1,123 @@
-import React from "react";
+import React, { useEffect, useRef } from 'react';
+import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
 import './Hero.css';
-import Profile_anuj from "../../assets/Profile_anuj.svg";
-import AnchorLink from "react-anchor-link-smooth-scroll"
-import social_links from "../../api/social_links.json";
-import styled from 'styled-components';
-
-const Card = () => { 
-  return (
-    <StyledWrapper>
-      <div className="card">
-        <div className="blob" />
-        <img className="img" src={Profile_anuj} alt="Profile" />
-        <h2>Hi, I am Anuj<br /><span>Singh</span></h2>
-      </div>
-    </StyledWrapper>
-  );
-}
-
-const StyledWrapper = styled.div`
-  .card {
-    width: 500px;
-    height: 300px;
-    background: #f0f0f0;
-    border-radius: 10px;
-    text-align: center;
-    transition: all 0.5s;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .card:hover {
-    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
-    background-color: #4bb8ff;
-  }
-
-  .blob {
-    height: 10px;
-    width: 75%;
-    border-radius: 0 0 30px 30px;
-    margin: 0 auto;
-    background-color: #4bb8ff;
-    transition: height 0.3s;
-  }
-
-  .card:hover .blob {
-    height: 0;
-  }
-
-  .img {
-    display: flex;
-    margin: 30px auto 10px;
-    width: 70px;
-    height: 70px;
-    background-color: #4bb8ff;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s;
-  }
-
-  .card:hover .img {
-    width: 100%;
-    height: 70%;
-    border-radius: 10px 0 0;
-    margin: 0 auto;
-    background-color: #f0f0f0;
-    z-index: 1;
-  }
-
-  h2 {
-    padding: 15px 10px;
-    font-size: 25px;
-    transition: opacity 0.5s;
-    line-height: 17px;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-  }
-
-  span {
-    font-size: 18px;
-  }
-
-  .card:hover h2 {
-    opacity: 0;
-  }
-
-  p {
-    opacity: 0;
-    transition: opacity 0.75s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    position: absolute;
-    bottom: 15px;
-    left: 0;
-    right: 0;
-  }
-
-  .card:hover > p {
-    opacity: 1;
-    transition: opacity 0.1s;
-  }
-
-  svg {
-    padding: 5px;
-  }
-`;
-
-
-
 
 const Hero = () => {
+  const canvasRef = useRef(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    let animationFrameId;
+
+    const resizeCanvas = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+
+    class Particle {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 2;
+        this.speedX = Math.random() * 2 - 1;
+        this.speedY = Math.random() * 2 - 1;
+        this.color = `rgba(${Math.random() * 100 + 155}, ${Math.random() * 100 + 155}, 255, ${Math.random() * 0.5 + 0.2})`;
+      }
+
+      update() {
+        this.x += this.speedX;
+        this.y += this.speedY;
+
+        if (this.x > canvas.width) this.x = 0;
+        if (this.x < 0) this.x = canvas.width;
+        if (this.y > canvas.height) this.y = 0;
+        if (this.y < 0) this.y = canvas.height;
+      }
+
+      draw() {
+        ctx.fillStyle = this.color;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+
+    const init = () => {
+      particles = [];
+      for (let i = 0; i < 100; i++) {
+        particles.push(new Particle());
+      }
+    };
+
+    const animate = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(particle => {
+        particle.update();
+        particle.draw();
+      });
+      animationFrameId = requestAnimationFrame(animate);
+    };
+
+    resizeCanvas();
+    init();
+    animate();
+
+    window.addEventListener('resize', () => {
+      resizeCanvas();
+      init();
+    });
+
+    return () => {
+      cancelAnimationFrame(animationFrameId);
+      window.removeEventListener('resize', resizeCanvas);
+    };
+  }, []);
+
   return (
-    <div id='home' className='hero'><Card>
-      <img src={Profile_anuj} alt="Profile_anuj" width="300px" height="300px"/>
-      </Card>
-      <p>Full Stack Developer | Problem Solver | Learner</p>
-      <div className="hero-action">
-        <div className="hero-contact">
-          <AnchorLink href="#contact">Connect with me</AnchorLink>
+    <div className="hero-container">
+      <canvas ref={canvasRef} className="particle-canvas" />
+      <div className="hero-content">
+        <div className="hero-text-container">
+          <h1 className="glitch" data-text="Anuj Singh">Anuj Singh</h1>
+          <div className="hero-subtitle">
+            <span className="gradient-text">Full Stack Developer</span>
+            <span className="separator">|</span>
+            <span className="gradient-text">Web-dev,Mern stack,Software Developer</span>
+          </div>
+          <p className="hero-description">
+            Crafting digital experiences that leave a lasting impression
+          </p>
+          <div className="hero-buttons">
+            <button className="primary-button">
+              View Projects <ArrowRight className="button-icon" />
+            </button>
+            <div className="social-links">
+              <a href="#" className="social-link">
+                <Github />
+              </a>
+              <a href="#" className="social-link">
+                <Linkedin />
+              </a>
+              <a href="#" className="social-link">
+                <Mail />
+              </a>
+            </div>
+          </div>
         </div>
-        <div className="hero-resume">
-  <a href={social_links.linkedin} target='_blank' rel='noopener noreferrer'>
-    My resume
-  </a>
-</div>
+        <div className="hero-shape">
+          <div className="rotating-border"></div>
+        </div>
+      </div>
+      <div className="scroll-indicator">
+        <div className="mouse">
+          <div className="wheel"></div>
+        </div>
+        <div className="scroll-text">Scroll Down</div>
       </div>
     </div>
   );
-}
+};
 
 export default Hero;
