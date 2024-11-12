@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import './Hero.css';
 
 const Hero = () => {
@@ -89,22 +89,18 @@ const Hero = () => {
           <p className="hero-description">
             Crafting digital experiences that leave a lasting impression
           </p>
-          <div className="hero-buttons">
-            <button className="primary-button">
-              View Projects <ArrowRight className="button-icon" />
-            </button>
-            <div className="social-links">
-              <a href="#" className="social-link">
-                <Github />
-              </a>
-              <a href="#" className="social-link">
-                <Linkedin />
-              </a>
-              <a href="#" className="social-link">
-                <Mail />
-              </a>
-            </div>
+          <div className="social-links" style={{ display: 'flex', justifyContent: 'center' }}>
+            <a href="#" className="social-link">
+              <Github />
+            </a>
+            <a href="#" className="social-link">
+              <Linkedin />
+            </a>
+            <a href="#" className="social-link">
+              <Mail />
+            </a>
           </div>
+
         </div>
         <div className="hero-shape">
           <div className="rotating-border"></div>
