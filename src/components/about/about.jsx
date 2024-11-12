@@ -1,6 +1,6 @@
 import "./about.css";
 import theme from "../../assets/theme.svg";
-import Profile_anuj from "../../assets/Profile_anuj.svg";
+import Profile_anuj from "../../assets/Profile_anuj.png";
 
 const About = () => {
   return (

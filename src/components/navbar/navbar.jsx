@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import './navbar.css';
-import Logo_anuj from '../../assets/Logo_anuj.svg';
+import logo_anuj from '../../assets/logo_anuj.jpg';
 import nav_underline from '../../assets/nav_underline.svg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-      <img src={Logo_anuj} alt="logo" className='logo-image' />
+      <img src={logo_anuj} alt="logo" className='logo-image' />
       <ul ref={menuRef} className="nav-menu">
         <li>
           <AnchorLink className='anchor-link' href='#home' onClick={() => setMenu("home")}>

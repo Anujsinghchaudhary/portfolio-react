@@ -1,7 +1,7 @@
 import React from 'react';
-import { Briefcase, GraduationCap, Trophy, Heart, Code, User, MapPin, Mail, Phone, Globe } from 'lucide-react';
+import { Briefcase, GraduationCap, Trophy, Heart, Code, MapPin, Mail, Phone, Globe } from 'lucide-react';
 import './AboutMe.css';
-import Profile_anuj from '../../assets/profile_anuj.svg';
+import Profile_anuj from '../../assets/profile_anuj.jpg';
 
 const AboutMe = () => {
   return (
@@ -62,7 +62,7 @@ const AboutMe = () => {
               <div className="timeline-item">
                 <div className="timeline-marker"></div>
                 <p className="year">2022-2026</p>
-                <p className="degree">Bachelor's in Software Engineering</p>
+                <p className="degree">Bachelors in Software Engineering</p>
                 <p className="school">Graphic era University,Dehradun,Uttrakhand</p>
               </div>
             </div>

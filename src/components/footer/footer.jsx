@@ -1,7 +1,7 @@
 import React from 'react';
 import socail_links from '../../api/social_links.json';
 import "./footer.css";
-import Logo_anuj from '../../assets/Logo_anuj.svg';
+import logo_anuj from '../../assets/logo_anuj.jpg';
 import user_icon from '../../assets/user_icon.svg';
 import styled from 'styled-components';
 
@@ -80,7 +80,7 @@ export const Footer = () => {
     <div className='footer'>
       <div className="footer-top">
         <div className="footer-top-left">
-          <img src={Logo_anuj} alt="Footer Logo" className="footer-logo"/>
+          <img src={logo_anuj} alt="Footer Logo" className="footer-logo"/>
           <p>Full Stack Developer,B.Tech CSE Student in Graphic Era University Dehradun, UK, INDIA.</p>
         </div>
         <div className="footer-top-right">

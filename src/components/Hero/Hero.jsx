@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
+import socail_links from '../../api/social_links.json';
 import './Hero.css';
 
 const Hero = () => {
@@ -90,13 +91,13 @@ const Hero = () => {
             Crafting digital experiences that leave a lasting impression
           </p>
           <div className="social-links" style={{ display: 'flex', justifyContent: 'center' }}>
-            <a href="#" className="social-link">
+            <a href={socail_links.github} className="social-link">
               <Github />
             </a>
-            <a href="#" className="social-link">
+            <a href={socail_links.linkedin} className="social-link">
               <Linkedin />
             </a>
-            <a href="#" className="social-link">
+            <a href={socail_links.gmail} className="social-link">
               <Mail />
             </a>
           </div>
