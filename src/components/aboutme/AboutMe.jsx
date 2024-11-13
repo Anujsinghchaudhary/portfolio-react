@@ -28,7 +28,7 @@ const AboutMe = () => {
                   <Mail className="contact-icon" />anujsinghchaudhary07@gmail.com
                 </div>
                 <div className="contact-item">
-                  <Phone className="contact-icon" />+91 6396542978
+                  <Phone className="contact-icon" />+91 6396....78
                 </div>
                 <div className="contact-item">
                   <Globe className="contact-icon" /> English,Hindi
