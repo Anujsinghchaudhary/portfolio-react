@@ -1,6 +1,6 @@
 import "./about.css";
 import theme from "../../assets/theme.svg";
-import Profile_anuj from "../../assets/Profile_anuj.png";
+import profile_anuj from "../../assets/profile_anuj.png";
 
 const About = () => {
   return (
@@ -11,7 +11,7 @@ const About = () => {
       </header>
       <div className="about-sections">
         <div className="about-left">
-          <img src={Profile_anuj} alt="Profile of Anuj Singh" width="300px" height="300px" />
+          <img src={profile_anuj} alt="Profile of Anuj Singh" width="300px" height="300px" />
         </div>
         <div className="about-right">
           <div className="about-para">

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Briefcase, GraduationCap, Trophy, Heart, Code, MapPin, Mail, Phone, Globe } from 'lucide-react';
 import './AboutMe.css';
-import Profile_anuj from '../../assets/profile_anuj.jpg';
+import profile_anuj from '../../assets/profile_anuj.jpg';
 
 const AboutMe = () => {
   return (
@@ -11,7 +11,7 @@ const AboutMe = () => {
           <div className="profile-container">
             <div className="profile-image-wrapper">
               <img
-                src={Profile_anuj}
+                src={profile_anuj}
                 alt="Profile"
                 className="profile-image"
               />
