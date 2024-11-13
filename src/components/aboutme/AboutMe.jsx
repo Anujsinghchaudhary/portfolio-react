@@ -107,7 +107,7 @@ const AboutMe = () => {
               <div className="achievement-item">
                 <div className="achievement-icon">🌟</div>
                 <div>
-                  <h3>Selected for Internship</h3>
+                  <h3>Looking for Internship</h3>
                   <p></p>
                 </div>
               </div>
