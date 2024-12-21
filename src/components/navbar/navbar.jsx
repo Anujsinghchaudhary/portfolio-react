@@ -43,8 +43,10 @@ const Navbar = () => {
           </AnchorLink>
         </li>
       </ul>
-      <div className="nav-connect" onClick={() => setMenu("connect")}>
-        <AnchorLink className='anchor-link' href='#contact'>Connect with me</AnchorLink>
+      <div className="nav-connect">
+        <AnchorLink className='anchor-link' href='#contact' onClick={() => setMenu("connect")}>
+          Connect with me
+        </AnchorLink>
       </div>
     </div>
   )
