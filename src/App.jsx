@@ -6,9 +6,6 @@ import Footer from './components/footer/footer';
 import SkillsSection from './components/skills/SkillsSection';
 import Aboutme from './components/aboutme/AboutMe';
 import Projects from './components/projects/Projects';
-import './smoothScroll';
-import './scrollTransition'; 
-import './index.css';
 
 const App = () => {
   return (
