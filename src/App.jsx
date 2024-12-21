@@ -15,11 +15,11 @@ const App = () => {
     <div className="bg-gray-900 min-h-screen">
       <div className="container mx-auto px-4">
         <Navbar />
-        <section><Hero /></section>
-        <section><Aboutme /></section>
-        <section><SkillsSection /></section>
-        <section><Projects /></section>
-        <section><Contact /></section>
+        <section id="hero"><Hero /></section>
+        <section id="aboutme"><Aboutme /></section>
+        <section id="skills"><SkillsSection /></section>
+        <section id="projects"><Projects /></section>
+        <section id="contact"><Contact /></section>
         <Footer />
       </div>
     </div>
