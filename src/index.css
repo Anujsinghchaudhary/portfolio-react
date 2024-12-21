@@ -1,23 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #1a202c;
-    color: #ffffff; /
-  }
+  background-color: #1a202c;
+  color: #ffffff;
+}
 
-  section {
-    opacity: 0;
-    transform: scale(1.2);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-  
-  section.visible {
-    opacity: 1;
-    transform: scale(1);
-  }
+section {
+  opacity: 0;
+  transform: scale(1.2);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: scale(1);
+}

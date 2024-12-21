@@ -13,25 +13,25 @@ const Navbar = () => {
       <img src={logo_anuj} alt="logo" className='logo-image' />
       <ul ref={menuRef} className="nav-menu">
         <li>
-          <AnchorLink className='anchor-link' href='#home' onClick={() => setMenu("home")}>
+          <AnchorLink className='anchor-link' href='#hero' onClick={() => setMenu("home")}>
             <p>Home</p>
             {menu === "home" && <img src={nav_underline} alt='Underline' />}
           </AnchorLink>
         </li>
         <li>
-          <AnchorLink className='anchor-link' href='#about' onClick={() => setMenu("about")}>
+          <AnchorLink className='anchor-link' href='#aboutme' onClick={() => setMenu("about")}>
             <p>About me</p>
             {menu === "about" && <img src={nav_underline} alt='Underline' />}
           </AnchorLink>
         </li>
         <li>
-          <AnchorLink className='anchor-link' href='#services' onClick={() => setMenu("services")}>
+          <AnchorLink className='anchor-link' href='#skills' onClick={() => setMenu("services")}>
             <p>Services</p>
             {menu === "services" && <img src={nav_underline} alt='Underline' />}
           </AnchorLink>
         </li>
         <li>
-          <AnchorLink className='anchor-link' href='#mywork' onClick={() => setMenu("mywork")}>
+          <AnchorLink className='anchor-link' href='#projects' onClick={() => setMenu("mywork")}>
             <p>Portfolio</p>
             {menu === "mywork" && <img src={nav_underline} alt='Underline' />}
           </AnchorLink>
