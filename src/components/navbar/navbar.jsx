@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './navbar.css';
 import logo_anuj from '../../assets/logo_anuj.jpg';
 import nav_underline from '../../assets/nav_underline.svg';
@@ -7,6 +7,10 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
   const menuRef = useRef();
+
+  useEffect(() => {
+    console.log("Current menu:", menu);
+  }, [menu]);
 
   return (
     <div className='navbar'>
