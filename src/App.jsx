@@ -9,7 +9,7 @@ import Projects from './components/projects/Projects';
 
 const App = () => {
   return (
-    <div className="bg-black min-h-screen">
+    <div className="min-h-screen">
       <div className="container mx-auto px-4">
         <Navbar />
         <Hero />
