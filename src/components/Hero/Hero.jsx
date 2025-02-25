@@ -77,43 +77,46 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="hero-container">
-      <canvas ref={canvasRef} className="particle-canvas" />
-      <div className="hero-content">
-        <div className="hero-text-container">
-          <h1 className="glitch" data-text="Anuj Singh">Anuj Singh</h1>
-          <div className="hero-subtitle">
-            <span className="gradient-text">Full Stack Developer</span>
-            <span className="separator">|</span>
-            <span className="gradient-text">Web-dev,Mern stack,Software Developer</span>
-          </div>
-          <p className="hero-description">
-            Crafting digital experiences that leave a lasting impression
-          </p>
-          <div className="social-links" style={{ display: 'flex', justifyContent: 'center' }}>
-            <a href={socail_links.github} className="social-link">
-              <Github />
-            </a>
-            <a href={socail_links.linkedin} className="social-link">
-              <Linkedin />
-            </a>
-            <a href={socail_links.gmail} className="social-link">
-              <Mail />
-            </a>
-          </div>
+    <section id="hero" className="hero-section">
+      <h1>Welcome to My Portfolio</h1>
+      <div className="hero-container">
+        <canvas ref={canvasRef} className="particle-canvas" />
+        <div className="hero-content">
+          <div className="hero-text-container">
+            <h1 className="glitch" data-text="Anuj Singh">Anuj Singh</h1>
+            <div className="hero-subtitle">
+              <span className="gradient-text">Full Stack Developer</span>
+              <span className="separator">|</span>
+              <span className="gradient-text">Web-dev,Mern stack,Software Developer</span>
+            </div>
+            <p className="hero-description">
+              Crafting digital experiences that leave a lasting impression
+            </p>
+            <div className="social-links" style={{ display: 'flex', justifyContent: 'center' }}>
+              <a href={socail_links.github} className="social-link">
+                <Github />
+              </a>
+              <a href={socail_links.linkedin} className="social-link">
+                <Linkedin />
+              </a>
+              <a href={socail_links.gmail} className="social-link">
+                <Mail />
+              </a>
+            </div>
 
+          </div>
+          <div className="hero-shape">
+            <div className="rotating-border"></div>
+          </div>
         </div>
-        <div className="hero-shape">
-          <div className="rotating-border"></div>
+        <div className="scroll-indicator">
+          <div className="mouse">
+            <div className="wheel"></div>
+          </div>
+          <div className="scroll-text">Scroll Down</div>
         </div>
       </div>
-      <div className="scroll-indicator">
-        <div className="mouse">
-          <div className="wheel"></div>
-        </div>
-        <div className="scroll-text">Scroll Down</div>
-      </div>
-    </div>
+    </section>
   );
 };
 
