@@ -17,34 +17,29 @@ const Navbar = () => {
       <img src={logo_anuj} alt="logo" className="logo-image" />
       <ul ref={menuRef} className="nav-menu">
         <li>
-          <AnchorLink className="anchor-link" href="#hero" onClick={() => setMenu("home")}>
-            <p>Home</p>
-            {menu === "home" && <img src={nav_underline} alt="Underline" />}
-          </AnchorLink>
+        <AnchorLink className="anchor-link" href="#home" onClick={() => setMenu("home")}>
+          Home
+        </AnchorLink>
         </li>
         <li>
-          <AnchorLink className="anchor-link" href="#aboutme" onClick={() => setMenu("about")}>
-            <p>About me</p>
-            {menu === "about" && <img src={nav_underline} alt="Underline" />}
-          </AnchorLink>
+        <AnchorLink className="anchor-link" href="#aboutme" onClick={() => setMenu("aboutme")}>
+         aboutme
+        </AnchorLink>
         </li>
         <li>
-          <AnchorLink className="anchor-link" href="#skills" onClick={() => setMenu("services")}>
-            <p>Services</p>
-            {menu === "services" && <img src={nav_underline} alt="Underline" />}
-          </AnchorLink>
+        <AnchorLink className="anchor-link" href="#services" onClick={() => setMenu("services")}>
+         Services
+        </AnchorLink>
         </li>
         <li>
-          <AnchorLink className="anchor-link" href="#projects" onClick={() => setMenu("mywork")}>
-            <p>Portfolio</p>
-            {menu === "mywork" && <img src={nav_underline} alt="Underline" />}
-          </AnchorLink>
+        <AnchorLink className="anchor-link" href="#portfolio" onClick={() => setMenu("connect")}>
+        Portfolio
+        </AnchorLink>
         </li>
         <li>
-          <AnchorLink className="anchor-link" href="#contact" onClick={() => setMenu("contact")}>
-            <p>Contact</p>
-            {menu === "contact" && <img src={nav_underline} alt="Underline" />}
-          </AnchorLink>
+        <AnchorLink className="anchor-link" href="#contact" onClick={() => setMenu("connect")}>
+          Connect with me
+        </AnchorLink>
         </li>
       </ul>
       <div className="nav-connect">
