@@ -60,7 +60,7 @@ const projects = [
   // {
   //   title: "E-Commerce Platform",
   //   description: "A full-stack e-commerce solution with real-time inventory and payment processing",
-  //   image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1000",
+  //   image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000",
   //   tags: ["React", "Node.js", "MongoDB", "Stripe"],
   //   githubUrl: "https://github.com/yourusername/ecommerce-platform",
   //   liveUrl: "https://ecommerce-platform.example.com"
@@ -68,7 +68,7 @@ const projects = [
   {
     title: "TODO Application",
     description: "A simple TODO application with user authentication and task management",
-    image: "https://source.unsplash.com/1600x900/?keyboard,clipboard,lock",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000",
     tags: ["React", "css", "javascript"],
     githubUrl: "https://github.com/Anujsinghchaudhary/todoapp-react",
     liveUrl: "https://todoapp-react-nine.vercel.app/"
@@ -76,14 +76,14 @@ const projects = [
   {
     title: "Stock Market Prediction",
     description: "A machine learning model to predict stock prices using historical data",
-    image: "https://source.unsplash.com/1600x900/?stock,market,chart", 
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000", 
     tags: ["Python", "TensorFlow", "Keras", "Pandas"],
     githubUrl: "https://github.com/Anujsinghchaudhary/Stock-prediction-model",
   },
   {
     title: "emotion detection",
     description: "A machine learning model to detect human emotions using facial expressions",
-    image: "https://source.unsplash.com/1600x900/?face,emotion",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000",
     tags: ["Python", "TensorFlow", "OpenCV"],
     githubUrl:"https://github.com/Anujsinghchaudhary/emotion_recoginition_using_ml",
   },
