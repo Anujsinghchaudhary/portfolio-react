@@ -68,7 +68,7 @@ const projects = [
   {
     title: "TODO Application",
     description: "A simple TODO application with user authentication and task management",
-    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=1000",
+    image: "https://unsplash.com/photos/a-keyboard-and-a-clipboard-with-a-lock-on-it-bhFBtQt6Xp0",
     tags: ["React", "css","javascript"],
     githubUrl: "https://github.com/Anujsinghchaudhary/todoapp-react",
     liveUrl: "https://todoapp-react-nine.vercel.app/"
@@ -76,14 +76,14 @@ const projects = [
   {
     title: "Stock Market Prediction",
     description: "A machine learning model to predict stock prices using historical data",
-    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=1000",
+    image: "https://unsplash.com/photos/financial-chart-and-rising-graph-with-lines-and-numbers-and-bar-diagrams-that-illustrate-stock-market-behaviour-concept-of-successful-trading-dark-blue-background-3d-rendering-AM3wYIikxO4",
     tags: ["Python", "TensorFlow", "Keras", "Pandas"],
     githubUrl: "https://github.com/Anujsinghchaudhary/Stock-prediction-model",
   },
   {
     title: "emotion detection",
     description: "A machine learning model to detect human emotions using facial expressions",
-    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=1000",
+    image: "https://unsplash.com/photos/a-group-of-smiley-face-balloons-floating-in-the-air-sXqWEWCLkaA",
     tags: ["Python", "TensorFlow", "OpenCV"],
     githubUrl:"https://github.com/Anujsinghchaudhary/emotion_recoginition_using_ml",
   },
