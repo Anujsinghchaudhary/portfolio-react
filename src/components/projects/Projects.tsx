@@ -74,6 +74,20 @@ const projects = [
     liveUrl: "https://todoapp-react-nine.vercel.app/"
   },
   {
+    title: "Stock Market Prediction",
+    description: "A machine learning model to predict stock prices using historical data",
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=1000",
+    tags: ["Python", "TensorFlow", "Keras", "Pandas"],
+    githubUrl: "https://github.com/Anujsinghchaudhary/Stock-prediction-model",
+  },
+  {
+    title: "emotion detection",
+    description: "A machine learning model to detect human emotions using facial expressions",
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=1000",
+    tags: ["Python", "TensorFlow", "OpenCV"],
+    githubUrl:"https://github.com/Anujsinghchaudhary/emotion_recoginition_using_ml",
+  },
+  {
     title: "Portfolio Website",
     description: "Modern portfolio website built with React and Tailwind CSS",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000",
