@@ -57,29 +57,29 @@ function ProjectCard({ title, description, image, tags, githubUrl, liveUrl }: Pr
 }
 
 const projects = [
+  // {
+  //   title: "E-Commerce Platform",
+  //   description: "A full-stack e-commerce solution with real-time inventory and payment processing",
+  //   image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1000",
+  //   tags: ["React", "Node.js", "MongoDB", "Stripe"],
+  //   githubUrl: "https://github.com/yourusername/ecommerce-platform",
+  //   liveUrl: "https://ecommerce-platform.example.com"
+  // },
   {
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with real-time inventory and payment processing",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1000",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
-    githubUrl: "https://github.com/yourusername/ecommerce-platform",
-    liveUrl: "https://ecommerce-platform.example.com"
-  },
-  {
-    title: "AI Chat Application",
-    description: "Real-time chat application powered by AI for smart conversations",
-    image: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&q=80&w=1000",
-    tags: ["React", "OpenAI", "WebSocket", "Firebase"],
-    githubUrl: "https://github.com/yourusername/ai-chat-app",
-    liveUrl: "https://ai-chat.example.com"
+    title: "TODO Application",
+    description: "A simple TODO application with user authentication and task management",
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=1000",
+    tags: ["React", "css","javascript"],
+    githubUrl: "https://github.com/Anujsinghchaudhary/todoapp-react",
+    liveUrl: "https://todoapp-react-nine.vercel.app/"
   },
   {
     title: "Portfolio Website",
     description: "Modern portfolio website built with React and Tailwind CSS",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000",
     tags: ["React", "Tailwind CSS", "TypeScript"],
-    githubUrl: "https://github.com/yourusername/portfolio",
-    liveUrl: "https://portfolio.example.com"
+    githubUrl: "https://github.com/Anujsinghchaudhary/portfolio-react",
+    liveUrl: "https://anujsingh-portfolio.vercel.app/"
   }
 ];
 
