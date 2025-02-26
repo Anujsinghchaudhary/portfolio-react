@@ -53,7 +53,7 @@ const Navbar = () => {
             className="anchor-link" 
             href="#contact" 
             onClick={() => setMenu("contact")}>
-            Connect with me
+            Contact
           </AnchorLink>
         </li>
       </ul>
