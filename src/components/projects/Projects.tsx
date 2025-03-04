@@ -68,7 +68,7 @@ const projects = [
   {
     title: "TODO Application",
     description: "A simple TODO application with user authentication and task management",
-    image: "https://source.unsplash.com/featured/?todo,notes",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000",
     tags: ["React", "css", "javascript"],
     githubUrl: "https://github.com/Anujsinghchaudhary/todoapp-react",
     liveUrl: "https://todoapp-react-nine.vercel.app/"
@@ -76,21 +76,21 @@ const projects = [
   {
     title: "Stock Market Prediction",
     description: "A machine learning model to predict stock prices using historical data",
-    image: "https://source.unsplash.com/featured/?stock,market,chart", 
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000", 
     tags: ["Python", "TensorFlow", "Keras", "Pandas"],
     githubUrl: "https://github.com/Anujsinghchaudhary/Stock-prediction-model",
   },
   {
     title: "emotion detection",
     description: "A machine learning model to detect human emotions using facial expressions",
-    image: "https://source.unsplash.com/featured/?emotion,face",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000",
     tags: ["Python", "TensorFlow", "OpenCV"],
     githubUrl:"https://github.com/Anujsinghchaudhary/emotion_recoginition_using_ml",
   },
   {
     title: "Portfolio Website",
     description: "Modern portfolio website built with React and Tailwind CSS",
-    image: "https://source.unsplash.com/featured/?portfolio,website",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000",
     tags: ["React", "Tailwind CSS", "TypeScript"],
     githubUrl: "https://github.com/Anujsinghchaudhary/portfolio-react",
     liveUrl: "https://anujsingh-portfolio.vercel.app/"
