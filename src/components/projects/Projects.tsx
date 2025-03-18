@@ -68,7 +68,7 @@ const projects = [
   {
     title: "TODO Application",
     description: "A simple TODO application with user authentication and task management",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000",
+    image: "https://unsplash.com/photos/person-writing-on-white-paper-3QzMBrvCeyQ",
     tags: ["React", "css", "javascript"],
     githubUrl: "https://github.com/Anujsinghchaudhary/todoapp-react",
     liveUrl: "https://todoapp-react-nine.vercel.app/"
