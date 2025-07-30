@@ -8,4 +8,4 @@ This is a personal portfolio project built using React. It showcases various pro
 - Styled components for modular and reusable CSS
 - Framer Motion for animations
 - Built with Vite for fast development and build
-12345
+123456
