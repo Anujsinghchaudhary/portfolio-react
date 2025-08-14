@@ -1,8 +1,5 @@
 "use client"
-
-import type React from "react"
-
-import { useState, useEffect } from "react"
+import React, { useState, useEffect } from "react"
 
 export default function Header() {
   const [activeSection, setActiveSection] = useState("home")
@@ -19,7 +16,10 @@ export default function Header() {
           const offsetTop = element.offsetTop
           const offsetHeight = element.offsetHeight
 
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+          if (
+            scrollPosition >= offsetTop &&
+            scrollPosition < offsetTop + offsetHeight
+          ) {
             setActiveSection(section)
             break
           }
@@ -31,7 +31,7 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+  const handleAnchorClick = (e, sectionId) => {
     e.preventDefault()
     setIsMobileMenuOpen(false)
     const element = document.getElementById(sectionId)
@@ -63,7 +63,9 @@ export default function Header() {
                 href={`#${item.id}`}
                 onClick={(e) => handleAnchorClick(e, item.id)}
                 className={`text-sm font-medium transition-colors duration-200 hover:text-white ${
-                  activeSection === item.id ? "text-white" : "text-gray-300"
+                  activeSection === item.id
+                    ? "text-white"
+                    : "text-gray-300"
                 }`}
               >
                 {item.label}
@@ -81,9 +83,22 @@ export default function Header() {
           </a>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden text-white" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+          <button
+            className="md:hidden text-white"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
           </button>
         </div>
@@ -98,7 +113,9 @@ export default function Header() {
                   href={`#${item.id}`}
                   onClick={(e) => handleAnchorClick(e, item.id)}
                   className={`text-left text-sm font-medium transition-colors duration-200 hover:text-white ${
-                    activeSection === item.id ? "text-white" : "text-gray-300"
+                    activeSection === item.id
+                      ? "text-white"
+                      : "text-gray-300"
                   }`}
                 >
                   {item.label}
